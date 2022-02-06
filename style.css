@@ -1,0 +1,136 @@
+
+  body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+  }
+  .robot{
+    position: relative;
+  }
+  #head{
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    border-radius: 80px 80px 0 0; 
+    transition-duration: 400ms;
+  }
+  #left-eye, 
+  #right-eye {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #afb;
+    border-radius: 50%;
+    transition-duration: 400ms;
+  }
+  #left-eye {
+    top: 50px;
+    left: 30px;
+  }
+  #right-eye {
+    top: 50px;
+    left: 90px;
+  }
+  #body{
+    width: 150px;
+    height: 160px;
+    background-color: green;
+    position: fixed;
+    top: 155px;
+    left: 100px;
+    border-radius: 0 0 25% 25%; 
+  }
+  #left-hand,
+  #right-hand {
+    width: 35px;
+    height: 100px;
+    position: absolute;
+  }
+  #left-hand {
+    top: 0px;
+    left: -40px;
+  }
+  #right-hand{
+    top: 0px;
+    left: 155px;
+  }
+  .hand-top {
+    width: 36px;
+    height: 36px;
+    background-color: green;
+    border-radius: 50%
+  }
+  .hand-middle {
+    position: absolute;
+    width: 36px;
+    height: 80px;
+    background-color: green;
+    top: 18px;
+  }
+  .hand-bottom {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: green;
+    border-radius: 50%;
+    top: 80px;
+  }
+  #left-leg {
+    position: absolute;
+    left: 35px;
+    top: 150px;
+  }
+  #right-leg {
+    position: absolute;
+    left: 80px;
+    top: 150px;
+  }
+  .leg-middle {
+    position: absolute;
+    width: 36px;
+    height: 60px;
+    background-color: green;
+  }
+  .leg-bottom {
+    position: absolute;
+    width: 36px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: green;
+    top: 32px;
+  }
+  
+  /* Transitions and animations */
+  #head:hover{
+    transform: scaleX(1.2);
+    border-radius: 90px 90px 0 0;
+    
+    
+  }
+  #head:hover #left-eye {
+    transform: translateX(-15px);
+    background-color: red;
+  } 
+  #head:hover #right-eye{
+    transform: translateX(-15px);
+    background-color: red;
+  }
+  #left-hand:hover {
+    transform: rotate(13deg);
+  }
+  #right-hand:hover {
+    transform: rotate(-13deg);
+  }
+  #left-leg:hover{
+    transform: rotate(13deg);
+  }
+  #right-leg:hover {
+    transform: rotate(-13deg);
+  }
+  
